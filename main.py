@@ -1,9 +1,13 @@
+python
+import subprocess
+subprocess.run(["pip", "install", "python-telegram-bot==13.5"])
 import time
 import os
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
-TOKEN = os.environ['TOKEN']
+# Replace 'YOUR_TOKEN' with your actual bot token
+TOKEN = '6439681588:AAGsC50G6nfxClZ6Ge8Q98YvDZskYxBVPNA'
 
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Hello! Send /set <remaining_energy> to set a reminder when your energy is full.')
