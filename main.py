@@ -1,7 +1,6 @@
 import subprocess
 subprocess.run(["pip", "install", "python-telegram-bot==13.5"])
 import time
-import os
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
